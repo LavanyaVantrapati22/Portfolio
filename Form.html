@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form>
+           <fieldset>
+            <legand>Personal Details</legand>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Full Name" required>
+            <label>Email</label>
+            <input type="text" placeholder="Enter Email" required>
+            <label>Password</label>
+            <input type="text" placeholder="Enter password" required>
+            <label>Age</label>
+            <input type="number" min="18" max="60">
+            <label>Gender</label>
+            <div class="Inline">
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+            </div>
+           </fieldset>
+           <fieldset>
+            <legand>Educational details</legand>
+            <label>Courses</label>
+            <select>
+                <option>Select Course</option>
+                <option>BSC</option>
+                <option>BCA</option>
+                <option>BCOM</option>
+                <option>BTECH</option>
+            </select>
+            <label>Year</label>
+             <select>
+                <option>1st year</option>
+                <option>2nd year</option>
+                <option>3rd year</option>
+                <option>4th year</option>
+            </select>
+             <label>Skills</label>
+               <div class="inline">
+                  <input type="checkbox">HTML
+                  <input type="checkbox">CSS
+                  <input type="checkbox">JAVASCRIPT
+                  <input type="checkbox">PYTHON
+               </div>
+           </fieldset>
+           <fieldset>
+            <legand>Contact Details</legand>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter Phone Number">
+            <label>Adress</label>
+            <textarea rows="4" placeholder="Enter address"></textarea>
+           </fieldset>
+           <div class="agreement">
+            <input type="checkbox" required>
+            I agree that the above details are correct
+           </div>
+           <div class="buttons">
+            <button type="submit">Register</button>
+            <button type="reset" class="reset">Reset</button>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
